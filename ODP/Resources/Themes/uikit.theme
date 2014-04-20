@@ -18,4 +18,13 @@
 		<content-type>text/css</content-type>
 		<href>uikit.css</href>
 	</resource>
+	
+	<control override="false">
+		<!-- set a default page name unless you define it in the page itself -->
+		<name>ViewRoot</name>
+		<property>
+			<name>pageTitle</name>
+			<value>#{javascript:@DbTitle()}</value>
+		</property>
+	</control>
 </theme>
