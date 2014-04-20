@@ -14,4 +14,8 @@
 		<content-type>text/css</content-type>
 		<href>uikit-2.6.0/css/uikit.gradient.min.css</href>
 	</resource>
+	<resource>
+		<content-type>text/css</content-type>
+		<href>uikit.css</href>
+	</resource>
 </theme>

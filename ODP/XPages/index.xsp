@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xc="http://www.ibm.com/xsp/custom">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
 
-	<xc:_layout></xc:_layout></xp:view>
+	<xc:_layout>
+		<xp:this.facets>
+			<xp:div xp:key="facetContent">
+				<h1>Welcome to the UIKit NSF Template project</h1>
+			</xp:div>
+		</xp:this.facets>
+	</xc:_layout>
+</xp:view>

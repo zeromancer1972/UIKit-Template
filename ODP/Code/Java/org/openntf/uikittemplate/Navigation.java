@@ -14,7 +14,7 @@ public class Navigation implements Serializable {
 	public Navigation() {
 		this.navigation = new ArrayList<Page>();
 		this.navigation.add(new Page("Samples", "samples.xsp", "glyphicon glyphicon-star", false));
-		this.navigation.add(new Page("Bootstrap CKE", "bscke.xsp", "glyphicon glyphicon-star", false));
+		
 	}
 
 	public List<Page> getNavigation() {
