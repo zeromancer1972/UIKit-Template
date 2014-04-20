@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.1" replicaid="C1257CC000377D28" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="236" sequence="7" unid="8D74C64FE5D66E75C1257CC0003839B9">
+<created><datetime dst="true">20140420T121407,93+02</datetime></created>
+<modified><datetime dst="true">20140420T121418,30+02</datetime></modified>
+<revised><datetime dst="true">20140420T121418,29+02</datetime></revised>
+<lastaccessed><datetime dst="true">20140420T121418,30+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140420T121407,95+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Oliver Busse/O=ulcbs</name></updatedby>
+<wassignedby><name>CN=Oliver Busse/O=ulcbs</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>org/openntf/uikittemplate/Navigation.java</text></item>
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>org/openntf/uikittemplate/Navigation.java</text></item>
+
+</note>

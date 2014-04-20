@@ -1,0 +1,17 @@
+<theme extends="notes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
+
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>jquery-1.11.0.min.js</href>
+	</resource>
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>uikit-2.6.0/js/uikit.min.js</href>
+	</resource>
+
+	<resource>
+		<content-type>text/css</content-type>
+		<href>uikit-2.6.0/css/uikit.gradient.min.css</href>
+	</resource>
+</theme>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<xp:this.beforePageLoad><![CDATA[#{javascript:var url = facesContext.getExternalContext().getRequest().getRequestURI();
+if(url.indexOf(".xsp")==-1){
+	if(url.endsWith("/")){
+		url = url.substr(0, url.length-1)
+	}
+	context.redirectToPage(url+view.getPageName())
+}}]]></xp:this.beforePageLoad>
+
+	<nav class="uk-navbar uk-navbar-attached">
+		<div class="uk-container uk-container-center">
+			<a href="index.xsp" class="uk-navbar-brand">
+				<xp:text disableTheme="true" value="#{javascript:@DbTitle()}">
+				</xp:text>
+			</a>
+
+			<ul class="uk-navbar-nav">
+				<xp:repeat id="repeat1" rows="30" disableOutputTag="true"
+					value="#{javascript:navigation.navigation}" var="nav">
+					<xp:panel tagName="li">
+						<xp:this.styleClass><![CDATA[#{javascript:view.getPageName().indexOf(nav.getUrl())!=-1 ? "uk-active" : ""}]]></xp:this.styleClass>
+
+						<a href="#{javascript:nav.getUrl()}" target="#{javascript:nav.isNewWindow()?'_blank':''}">
+							<span class="#{javascript:nav.getIcon()}">
+							</span>
+							&#160;
+							<xp:text escape="true" id="computedField1" disableTheme="true"
+								value="#{javascript:nav.getLabel()}">
+							</xp:text>
+						</a>
+					</xp:panel>
+				</xp:repeat>
+			</ul>
+			<div class="uk-navbar-flip">
+				<ul class="uk-navbar-nav">
+					<xp:repeat id="repeat2" rows="30" disableOutputTag="true"
+						value="#{javascript:footer.navigation}" var="nav">
+						<xp:panel tagName="li" rendered="#{javascript:nav.visible}">
+							<xp:this.styleClass><![CDATA[#{javascript:view.getPageName().indexOf(nav.getUrl())!=-1 ? "uk-active" : ""}]]></xp:this.styleClass>
+							<a href="#{javascript:nav.getUrl()}" target="#{javascript:nav.isNewWindow()?'_blank':''}">
+								<xp:text escape="true" id="computedField2" disableTheme="true"
+									value="#{javascript:nav.getLabel()}">
+								</xp:text>
+							</a>
+						</xp:panel>
+					</xp:repeat>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</xp:view>
